@@ -1,0 +1,39 @@
+# ============================
+# Eyeogotchi Global Defaults
+# ============================
+
+partner: "Hey Partner"               # What you want Eyeogotchi to call you
+system:
+  heartbeat_interval: 5        # seconds
+  timezone: "UTC"              # UCT, PST, EST, PDT, EDT, IST, etc. (or auto-detect if added later)
+  ui_theme: "dark"             # "light" or "dark"
+
+logging:
+  level: INFO                  # DEBUG, INFO, WARNING, ERROR
+
+api:
+  host: "0.0.0.0"
+  port: 8080
+
+display:
+  width: 250                   # Display Emulator Width in Pixels (Default is Waveshare 2.13in)
+  height: 122                  # Display Emulator Height in Pixels (Optional, if you want to enforce aspect ratio)
+  refresh_mode: "auto"         # "auto", "manual", "fast", etc.
+  show_emulator: true          # UI display emulator toggle
+  pause_seconds: 30            # Seconds to pause on each screen before rotating to the next one (if using auto-rotation)
+  rotation_seconds: 15         # Seconds to rotate between screens (if using auto-rotation)
+
+runtime:
+  show_startup_banner: true
+  enable_touch_simulation: true
+
+mascot:
+  enabled: true
+  default_state: happy         # Default state for the mascot (can be set to: happy, curious, proud, sleepy, annoyed, bored, excited, sick)
+  state_decay_seconds: 120     # How many seconds before the mascot's state decays back to default (if not interacted with)
+  curiosity: 0.8               # how often it reacts to new APs
+  patience: 0.4                # how quickly it gets bored
+  pride: 0.9                   # how big the reaction to success is
+  sensitivity: 0.6             # how strongly system health affects mood
+  expressiveness: 0.7          # how often animations play
+

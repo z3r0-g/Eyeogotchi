@@ -1,0 +1,11 @@
+[Unit]
+Description=Eyeogotchi DNS Sinkhole
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m modules.dns_sinkhole.service.main
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+name: extensions
+label: "Extensions"
+description: "UI Extension Control Panel"
+version: "1.0"
+
+entrypoint: extensions.extensions.service.main:ExtensionsPlugin
+
+enabled: true
+
+config: {}

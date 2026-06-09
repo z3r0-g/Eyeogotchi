@@ -1,0 +1,129 @@
+/* extensions/dns/static/dns.css */
+/* ------------------------------------------------------------
+   DNS Dashboard 2.0 Styles
+   ------------------------------------------------------------ */
+
+/* Layout */
+.dns-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff10;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffffff20;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* Tables */
+.dns-table,
+.dns-events-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dns-table th,
+.dns-table td,
+.dns-events-table th,
+.dns-events-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #ffffff20;
+}
+
+.dns-events-table.small td {
+    font-size: 0.85rem;
+}
+
+.muted {
+    opacity: 0.6;
+}
+
+/* ------------------------------------------------------------
+   Inline DNS Setup
+   ------------------------------------------------------------ */
+.dns-inline-box {
+    background: #ffffff15;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ffffff25;
+    margin-top: 10px;
+}
+
+.dns-inline-command {
+    background: #111;
+    padding: 10px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.dns-inline-copy,
+.dns-inline-clear {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* ------------------------------------------------------------
+   Client Drill‑Down (Animated)
+   ------------------------------------------------------------ */
+.client-drilldown {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease, opacity 0.25s ease;
+}
+
+.client-drilldown.open {
+    max-height: 800px; /* enough for full content */
+    opacity: 1;
+}
+
+.client-drill-card {
+    background: #ffffff10;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffffff20;
+    margin-top: 10px;
+}
+
+.client-drill-card h4 {
+    margin-top: 0;
+}
+
+.client-drill-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------ */
+.dns-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------------------
+   Gravity Panel
+   ------------------------------------------------------------ */
+#dns-gravity-panel ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ------------------------------------------------------------
+   Settings Panel
+   ------------------------------------------------------------ */
+#dns-settings-panel p {
+    margin: 4px 0;
+}

@@ -1,0 +1,18 @@
+#Core
+Flask
+PyYAML
+click
+numpy
+python-dotenv
+cryptography
+aiohttp
+#WebSocket Backend
+eventlet
+#Display Image Processing
+pillow
+#Networking + System Modules
+requests
+psutil
+scapy
+#Telephony (LTE) + Serial Modules
+pyserial

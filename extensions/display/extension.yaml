@@ -1,0 +1,10 @@
+name: display
+label: "eInk Display"
+description: "Waveshare 2.13in eInk Display Emulator"
+version: "1.0"
+
+entrypoint: extensions.display.service.main:DisplayPlugin
+
+enabled: true
+
+config: {}

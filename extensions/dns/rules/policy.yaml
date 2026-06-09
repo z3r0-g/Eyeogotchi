@@ -1,0 +1,30 @@
+# Per‑client rules
+clients:
+  "192.168.1.10":
+    allow:
+      - "*.work.com"
+    block:
+      - "*.games.com"
+    rewrite:
+      "youtube.com": "216.239.38.120"   # SafeSearch IP
+    categories:
+      - adult
+      - gambling
+      - social
+
+# Time‑based rules
+schedules:
+  night_mode:
+    start: "00:00"
+    end: "06:00"
+    block:
+      - "*.social.com"
+      - "*.tiktok.com"
+
+# Global rules
+global:
+  enforce_safe_search: true
+  block_categories:
+    - ads
+    - malware
+    - phishing

@@ -1,0 +1,24 @@
+{
+  "name": "Eyeogotchi Dev Container",
+  "image": "python:3.13-slim",
+
+//"postCreateCommand": "apt-get update && apt-get install -y build-essential && pip install -r requirements.txt",
+  "postCreateCommand": "bash -c 'apt-get update && apt-get install -y build-essential && pip install --no-cache-dir -r requirements.txt && for req in extensions/*/requirements.txt; do if [ -f \"$req\" ]; then echo Installing $req; pip install --no-cache-dir -r \"$req\"; fi; done'",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.live-server",
+        "redhat.vscode-yaml",
+        "ms-python.autopep8",
+        "ms-python.pylint",
+        "ms-python.flake8",
+        "ms-python.mypy-type-checker",
+        "dbaeumer.vscode-eslint",
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  }
+}

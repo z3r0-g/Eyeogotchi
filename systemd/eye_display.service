@@ -1,0 +1,11 @@
+[Unit]
+Description=Eyeogotchi Display Renderer
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m modules.display.renderer.main
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

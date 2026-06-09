@@ -1,0 +1,5 @@
+sources:
+  - name: stevenblack
+    url: "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
+  - name: oisd_basic
+    url: "https://hosts.oisd.nl/basic"

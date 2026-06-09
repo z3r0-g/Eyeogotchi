@@ -1,0 +1,10 @@
+name: monitor_map
+label: "Network Map"
+description: "View Local Area Network Neighbors"
+version: "1.0"
+
+entrypoint: extensions.monitor_map.service.main:NetMapPlugin
+
+enabled: false
+
+config: {}

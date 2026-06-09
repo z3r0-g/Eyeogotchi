@@ -1,0 +1,12 @@
+feeds:
+  - name: phishing_army
+    url: "https://phishing.army/download/phishing_army_blocklist.txt"
+    category: "phishing"
+
+  - name: malware_domains
+    url: "https://mirror1.malwaredomains.com/files/justdomains"
+    category: "malware"
+
+  - name: abuse_ch
+    url: "https://urlhaus.abuse.ch/downloads/hostfile/"
+    category: "malware"

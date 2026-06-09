@@ -1,0 +1,11 @@
+[Unit]
+Description=Eyeogotchi Vulnerability Monitor
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m modules.vuln_monitor.service.main
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

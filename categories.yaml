@@ -1,0 +1,22 @@
+domains: {}
+inheritance:
+  ads:
+  - tracking
+  adult:
+  - nsfw
+  botnet:
+  - dangerous
+  c2:
+  - dangerous
+  cryptomining:
+  - resource_abuse
+  dangerous: []
+  gambling: []
+  malware:
+  - dangerous
+  nsfw: []
+  phishing:
+  - dangerous
+  resource_abuse: []
+  social: []
+  tracking: []

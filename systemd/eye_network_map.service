@@ -1,0 +1,11 @@
+[Unit]
+Description=Eyeogotchi Network Mapper
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m modules.network_mapper.service.main
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

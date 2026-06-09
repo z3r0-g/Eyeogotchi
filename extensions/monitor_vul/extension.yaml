@@ -1,0 +1,10 @@
+name: monitor_vul
+label: "Network Security"
+description: "View Network Neighbor Security"
+version: "1.0"
+
+entrypoint: extensions.monitor_vul.service.main:NetVulPlugin
+
+enabled: false
+
+config: {}

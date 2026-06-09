@@ -1,0 +1,10 @@
+name: template
+label: "EXAMPLE TEMPLATE"
+version: "1.0"
+description: "A minimal example extension for Eyeogotchi"
+enabled: false
+
+entrypoint: "extensions.EXAMPLE.service.main:EXAMPLEplugin"
+
+config:
+  message: "Hello from EXAMPLE!"
